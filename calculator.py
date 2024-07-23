@@ -30,12 +30,12 @@ def calculator():
 
     print(f"{num1} {operation} {num2} = {run}")
 
-    still_in = False
-    while not still_in:
+    still_in = True
+    while still_in:
         cont = input(f"Type 'y' to continue calculating with {run} or 'no' to start a new calculation: ")
 
         if cont == 'no':
-            still_in = True
+            still_in = False 
             calculator()
         else:    
             operation = input("pick another operation? ")
